@@ -32,6 +32,18 @@ export default defineConfig({
       ],
       icons: [
         {
+          src: 'icon512_rounded.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: 'apple-touch-icon.png',
+          sizes: '180x180',
+          type: 'image/png'
+        },
+
+
+        {
           purpose: "maskable",
           sizes: "512x512",
           src: "icon512_maskable.png",
@@ -43,10 +55,14 @@ export default defineConfig({
           src: "icon512_rounded.png",
           type: "image/png"
         }
+
+
+
+
       ],
       orientation: "any",
       display: "standalone",
-      dir: "auto",
+      // dir: "auto",
       lang: "en",
       name: "tooGoodtoEat",
       short_name: "tooGoodtoEat",
@@ -60,7 +76,7 @@ export default defineConfig({
     },
 
     devOptions: {
-      enabled: false,
+      enabled: true,
       navigateFallback: 'index.html',
       suppressWarnings: true,
       type: 'module',
