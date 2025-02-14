@@ -64,8 +64,8 @@ export default defineConfig({
       display: "standalone",
       // dir: "auto",
       lang: "en",
-      name: "tooGoodtoEat",
-      short_name: "tooGoodtoEat",
+      name: "toGotoEat",
+      short_name: "toGotoEat",
       start_url: "/"
     },
 
