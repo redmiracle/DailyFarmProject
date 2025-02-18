@@ -11,11 +11,8 @@ const Accounting = () => {
                 return <LogIn setPage={setPage} />;
             case "signIn":
                 return <SignIn setPage={setPage} />;
-
         }
     }
-
-
     return (
         <div>
             {render(page)}

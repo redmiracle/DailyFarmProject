@@ -7,9 +7,10 @@ interface Props {
 const LogIn = ({setPage}:Props) => {
     return (
         <div>
+            <div className={"m-auto w-[80%] mt-[20vh]"}>
             <LogInForm/>
-            <p>
-            Log In
+            </div>
+            <p className={"text-center mt-2"}>
             if you don't sing in,you may{'\u00A0'}
             <span className={"text-blue-400 cursor-pointer"}
                   onClick={() => {

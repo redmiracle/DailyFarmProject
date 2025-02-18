@@ -1,13 +1,13 @@
 
 const LogInForm = () => {
     return (
-        <div className="flex flex-col border-2 border-green-500 w-1/2 rounded-lg ">
+        <div className={"inputForm"}>
 
-            <label className={"inputFormItem"}> Log In:
-                <input type={"text"}/>
+            <label> Log In:
+                <input className={"inputFormItem"} type={"text"} required/>
             </label >
-            <label className={"inputFormItem"}> Password:
-                <input type={"text"}/>
+            <label> Password:
+                <input className={"inputFormItem"} type={"text"} required/>
             </label>
             <button> Log In</button>
         </div>
