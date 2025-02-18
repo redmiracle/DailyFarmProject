@@ -1,16 +1,26 @@
-import ShowPage from "./Componets/showPage/ShowPage.tsx";
-import Footer from "./Componets/Footer.tsx";
-import {useState} from "react";
+import ShowPage from "./Pages/showPage/ShowPage.tsx";
+import Accounting from "./Pages/accounting/Accounting.tsx";
 
 function App() {
-    const [page, setPage] = useState("");
 
-  return (
-      <div className="flex min-h-screen flex-col">
-      <ShowPage page={page}/>
-      <Footer setPage={setPage}/>
-      </div>
-  )
+    const page = "accounting"
+    const renderPage = (page: string) => {
+        switch (page) {
+            case "accounting":
+                return <Accounting/>;
+            case "showPage":
+                return <ShowPage/>;
+            case "error":
+                console.error(page);
+        }
+    }
+
+    return (
+        <div>
+            {renderPage(page)}
+        </div>
+    )
+
 }
 
 export default App
