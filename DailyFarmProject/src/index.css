@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-[#FFFBFA]  font-[--noto-sans];
+    }
+
+}
+
+
+@layer component {
+    .inputForm {
+        @apply flex flex-col border-2  border-gray-300 p-3 rounded-lg;
+    }
+
+    .inputFormItem {
+    @apply block mt-2 mb-3 w-full border-b-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-300 focus:rounded-md ;
+    }
+    .loginButton{
+        @apply mt-2 border-2 border-[#0B6B5F] bg-[#0B6B5F] w-3/5 p-1 rounded-md text-white m-auto opacity-80 active:opacity-100
+        ;
+    }
+
+
+
+    @theme{
+        --noto-sans: "Noto Sans", serif;
+    }
+
+}
