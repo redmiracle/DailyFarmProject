@@ -1,10 +1,13 @@
 import {useState} from "react";
-import {chevronLeftIcon, chevronRightIcon} from "../../icons/icons.tsx";
+import {chevronLeftIcon, chevronRightIcon} from "../../features/icons/icons.tsx";
 import {motion} from "framer-motion";
+import {setPage} from "../../features/render/globalRenderSlice.ts";
+import {useAppDispatch} from "../../app/hooks.ts";
 const SignInForm = () => {
 
     const [stage, setStage] = useState(1)
     const [animationsType,setAnimationType]=useState<'init' | 'left' | 'right'>("init")
+    const dispatch = useAppDispatch();
 
     const animationsProps={
         'init':{
@@ -30,6 +33,11 @@ const SignInForm = () => {
             setAnimationType("left");
         }
   }
+
+    const handleClick=()=>{
+        setTimeout(()=>dispatch(setPage("showPage")),150)
+    }
+
 
     const renderPage = (stage:number) => {
         switch (stage) {
@@ -88,7 +96,7 @@ const SignInForm = () => {
                         <label> Password:
                             <input className={"inputFormItem"} type={"text"}/>
                         </label>
-                        <button> Sing In</button>
+                            <button type={"button"} className={"loginButton"} onClick={handleClick}> Sing In</button>
                     </div>
                 )
         }

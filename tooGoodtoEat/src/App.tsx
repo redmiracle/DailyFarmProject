@@ -1,9 +1,10 @@
 import ShowPage from "./Pages/showPage/ShowPage.tsx";
 import Accounting from "./Pages/accounting/Accounting.tsx";
+import {useAppSelector} from "./app/hooks.ts";
 
 function App() {
 
-    const page = "accounting"
+    const page = useAppSelector(state => state.render.page);
     const renderPage = (page: string) => {
         switch (page) {
             case "accounting":

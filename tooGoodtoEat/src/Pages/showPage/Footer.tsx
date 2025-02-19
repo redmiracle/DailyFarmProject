@@ -1,4 +1,4 @@
-import {accountIcon, favoritIcon, ordersIcon, searchIcon} from "../../icons/icons.tsx";
+import {accountIcon, favoritIcon, ordersIcon, searchIcon} from "../../features/icons/icons.tsx";
 
 interface Props {
     setPage: (page:string) => void;
