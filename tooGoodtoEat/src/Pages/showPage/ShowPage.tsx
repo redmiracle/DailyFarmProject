@@ -23,7 +23,7 @@ const ShowPage = () => {
     }
     return (
         <div className="flex min-h-screen flex-col">
-            <h1 className={"text-blue-400 text-3xl"}>Hello</h1>
+            <h1 className={"text-purple-400 text-3xl text-center"}>To Go To Eat</h1>
             <div className="grow">
                 {renderPage(page)}
             </div>

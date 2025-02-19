@@ -1,11 +1,11 @@
-import {cadsType,saleCardsType} from "../../types";
+import {cadsType} from "../../types";
 import {createSlice} from "@reduxjs/toolkit";
 import {recCards, saleCards,favoriteCards} from "../const.ts";
 
 
-interface CardsSliceType {
+export interface CardsSliceType {
     recCards:cadsType[],
-    saleCards:saleCardsType[],
+    saleCards:cadsType[],
     favoriteCards:cadsType[],
 }
 

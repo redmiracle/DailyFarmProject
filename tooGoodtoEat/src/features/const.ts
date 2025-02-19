@@ -1,4 +1,4 @@
-import {cadsType, saleCardsType} from "../types";
+import {cadsType} from "../types";
 
 export const recCards:cadsType[]= [
     {
@@ -9,13 +9,13 @@ export const recCards:cadsType[]= [
     {
         name: "name 2",
         description: "description2",
-        src: "https://get.pxhere.com/photo/food-produce-vegetable-market-carrot-vegetables-carrots-vegetable-garden-1058100.jpg"
+        src: "https://cdn.botanichka.ru/wp-content/uploads/2019/04/15-luchshih-sortov-morkovi-16.jpg"
     },
 
 ]
 
 
-export const saleCards:saleCardsType[]= [
+export const saleCards:cadsType[]= [
     {
         name: "sale name 1",
         description: "description sale 1",

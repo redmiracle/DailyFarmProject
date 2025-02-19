@@ -51,7 +51,7 @@ const SignInForm = () => {
                          <input className={"inputFormItem"} type={"text"} required/>
                      </label>
                      <label> birth date
-                         <input className={"inputFormItem pt-2"} type={"date"} required/>
+                         <input className={"inputFormItem pt-2 border-2 "} type={"date"} required/>
                      </label>
                      <label> gender
                          <select className={"inputFormItem pt-2 focus:w-1/2"}>
